@@ -1,8 +1,8 @@
 {{ if or (hasPrefix .Inner "\n") (hasPrefix .Inner "<p>") }}
-    $$
-    {{ $inner := trim (.Inner | htmlUnescape) "$\n " }}
-    {{- replace $inner "\n" " " -}}
-    $$
+$$
+{{ $inner := trim (.Inner | htmlUnescape) "$\n " }}
+{{- replace $inner "\n" " " -}}
+$$
 {{ else }}
-    ${{- trim (.Inner | htmlUnescape) "$\n " -}}$
+${{- trim (.Inner | htmlUnescape) "$\n " -}}$
 {{ end }}

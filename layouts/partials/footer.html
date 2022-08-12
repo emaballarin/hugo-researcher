@@ -3,13 +3,13 @@
     {{ if .Site.Params.socialIcons }}
     <div class="container text-center">
         {{ range $item := .Site.Params.socialIcons }}
-            <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
+        <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
         {{ end }}
     </div>
     {{ end }}
     {{ with .Site.Params.footer }}
-        <div class="container text-center">
-            <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
-        </div>
+    <div class="container text-center">
+        <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
+    </div>
     {{ end }}
 </div>
