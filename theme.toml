@@ -1,8 +1,8 @@
 name = "Researcher"
 license = "GPL-3.0"
 licenselink = "https://github.com/emaballarin/hugo-researcher/blob/master/LICENSE"
-description = "A simple monospaced resume theme for Hugo."
-tags = ["blog", "bootstrap", "clean", "minimal", "personal", "responsive", "resume", "simple"]
+description = "A simple monospaced academic theme for Hugo."
+tags = ["blog", "bootstrap", "clean", "minimal", "personal", "responsive", "resume", "simple", "academic"]
 features = ["bootstrap", "responsive", "simple"]
 homepage = "https://github.com/emaballarin/hugo-researcher"
 min_version = "0.74.3"
