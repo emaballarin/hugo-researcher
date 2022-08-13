@@ -1,3 +1,6 @@
+{{ if eq .Type "post" }}
+{{ template "partials/comments.html" . }}
+{{ end }}
 <div id="footer" class="mb-5">
     <hr>
     {{ if .Site.Params.socialIcons }}
@@ -13,3 +16,4 @@
     </div>
     {{ end }}
 </div>
+{{ partial "math.html" . }}
