@@ -1,6 +1,4 @@
-{{ if eq .Type "post" }}
-{{ template "partials/comments.html" . }}
-{{ end }}
+{{ if .Params.Comments }}{{ if .Site.Params.utterances.repo }}{{ partial "comments.html" . }}{{ end }}{{ end }}
 <div id="footer" class="mb-5">
     <hr>
     {{ if .Site.Params.socialIcons }}

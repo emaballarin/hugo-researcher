@@ -1,6 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }} | {{ .Site.Title }}"
+title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+math: false
+comments: false
 draft: true
 ---
 
