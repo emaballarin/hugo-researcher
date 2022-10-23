@@ -3,8 +3,13 @@
     <hr>
     {{ if .Site.Params.socialIcons }}
     <div class="container text-center">
-        {{ range $item := .Site.Params.socialIcons }}
+        {{ $social_len := (len .Site.Params.socialIcons) }}
+        {{ range $social_idx, $item := .Site.Params.socialIcons }}
         <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
+        {{ if eq (add $social_idx 1) $social_len }}
+        {{ else }}
+        <span class="nav-item navbar-text mx-0">/</span>
+        {{ end }}
         {{ end }}
     </div>
     {{ end }}
