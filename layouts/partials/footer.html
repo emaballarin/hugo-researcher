@@ -19,4 +19,5 @@
     </div>
     {{ end }}
 </div>
-{{ if .Params.math }}{{ partial "math.html" . }}{{ end }}
+{{ if .Params.mathjax }}{{ partial "mathjax.html" . }}{{ end }}
+{{ if .Params.katex }}{{ partial "katex.html" . }}{{ end }}

@@ -1,8 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-math: false
+mathjax: false
+katex: false
 comments: false
 draft: true
 ---
-
