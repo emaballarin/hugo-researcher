@@ -3,10 +3,6 @@
 A simple monospaced resume theme for Hugo. It was ported from Jekyll theme
 [ankitsultana/researcher](https://github.com/ankitsultana/researcher).
 
-## Screenshot
-
-![thumbnail](https://github.com/emaballarin/hugo-researcher/blob/master/images/tn.png)
-
 ## Installation
 
 This theme uses Sass to generate CSS files so make sure you have the
@@ -25,12 +21,6 @@ Update the theme option in `config.toml`:
 ```toml
 theme = "researcher"
 ```
-
-## Configuration
-
-A self-explanatory configuration file is present in
-[exampleSite/config.toml](https://github.com/ojroques/hugo-researcher/blob/master/exampleSite/config.toml),
-along the files of a demo website.
 
 ## License
 
