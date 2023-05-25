@@ -5,7 +5,7 @@
     <div class="container text-center">
         {{ $social_len := (len .Site.Params.socialIcons) }}
         {{ range $social_idx, $item := .Site.Params.socialIcons }}
-        <a {{ if .rel }}rel="{{ $item.rel }}" {{ end }} href="{{ $item.url }}" class="{{ $item.icon }} fa-1x"
+        <a {{ if .rel }}rel="{{ $item.rel }}"{{ end }}{{ if .blank }}target="_blank"{{ end }} href="{{ $item.url }}" class="{{ $item.icon }} fa-1x"
             title="{{ $item.title }}"></a>
         {{ if eq (add $social_idx 1) $social_len }}
         {{ else }}
@@ -16,7 +16,7 @@
     {{ end }}
     {{ with .Site.Params.footer }}
     <div class="container text-center">
-        <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
+        <a href="{{ .url | absURL }}" title="{{ .text }}" {{ if .blank }}target="_blank"{{ end }}><small>{{ .text }}</small></a>
     </div>
     {{ end }}
 </div>
