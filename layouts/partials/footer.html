@@ -16,7 +16,7 @@
     {{ end }}
     {{ with .Site.Params.footer }}
     <div class="container text-center">
-        <a href="{{ .url | absURL }}" title="{{ .text }}" {{ if .blank }}target="_blank"{{ end }}><small>{{ .text }}</small></a>
+        <a href="{{ .url | absURL }}" title="{{.pretext}}{{now.Year}}{{.posttext}}" {{ if .blank }}target="_blank"{{ end }}><small>{{.pretext}}{{now.Year}}{{.posttext}}</small></a>
     </div>
     {{ end }}
 </div>
