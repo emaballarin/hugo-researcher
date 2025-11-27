@@ -1,8 +1,9 @@
 {{ if .Params.Comments }}{{ if .Site.Params.utterances.repo }}{{ partial "comments.html" . }}{{ end }}{{ end }}
 <div id="footer" class="mb-5">
-    <hr>
+    <div class="imgcontainer text-center"><br><img src="https://bucket.ballarin.cc/personal/mycat.svg" height="55"/><br><br></div>
     {{ if .Site.Params.socialIcons }}
     <div class="container text-center">
+    	<br><br>
         {{ $social_len := (len .Site.Params.socialIcons) }}
         {{ range $social_idx, $item := .Site.Params.socialIcons }}
         <a {{ if .rel }}rel="{{ $item.rel }}"{{ end }}{{ if .blank }}target="_blank"{{ end }} href="{{ $item.url }}" class="{{ $item.icon }} fa-1x"
@@ -16,7 +17,7 @@
     {{ end }}
     {{ with .Site.Params.footer }}
     <div class="container text-center">
-        <a href="{{ .url | absURL }}" title="{{.pretext}}{{now.Year}}{{.posttext}}" {{ if .blank }}target="_blank"{{ end }}><small>{{.pretext}}{{now.Year}}{{.posttext}}</small></a>
+        <br><a href="{{ .url | absURL }}" title="{{.pretext}}{{now.Year}}{{.posttext}}" {{ if .blank }}target="_blank"{{ end }}><small>{{.pretext}}{{now.Year}}{{.posttext}}</small></a>
     </div>
     {{ end }}
 </div>
